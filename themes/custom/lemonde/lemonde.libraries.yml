@@ -1,0 +1,17 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/lemonde.css: {}
+  js:
+    js/lemonde.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/modernizr
+
+accueil:
+  version: VERSION
+  css:
+    base:
+      css/accueil.css: {}

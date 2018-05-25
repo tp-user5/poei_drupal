@@ -1,0 +1,25 @@
+{%
+    set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+]
+%}
+{{ attach_library('classy/node') }}
+{{ attach_library('ive/node_top') }}
+
+<div class="top">
+    {% block top %}{% endblock %}
+</div>
+
+<article{{ attributes.addClass(classes) }}>
+    {% include 'node--header.html.twig' %}
+
+    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        {% block content %}{% endblock %}
+    </div>
+</article>

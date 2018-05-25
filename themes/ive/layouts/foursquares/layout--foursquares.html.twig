@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+    set classes = [
+    'layout',
+    'layout--twocol',
+]
+%}
+{% if content %}
+    <div {{ attributes.addClass(classes) }}>
+        <div>
+            {% if content.top_left %}
+                <div>Top Left</div>
+                <div id="TL" {{ region_attributes.top_left.addClass('layout__region', 'layout__region--top') }}>
+                    {{ content.top_left }}
+                </div>
+            {% endif %}
+
+            {% if content.top_right %}
+                <div>Top Right</div>
+                <div id="TR" {{ region_attributes.top_right.addClass('layout__region', 'layout__region--first') }}>
+                    {{ content.top_right }}
+                </div>
+            {% endif %}
+        </div>
+        <div>
+            {% if content.bottom_left %}
+                <div>Bottom Left</div>
+                <div id="BL" {{ region_attributes.bottom_left.addClass('layout__region', 'layout__region--second') }}>
+                    {{ content.bottom_left }}
+                </div>
+            {% endif %}
+
+            {% if content.bottom_right %}
+                <div>Bottom Right</div>
+                <div id="BR" {{ region_attributes.bottom_right.addClass('layout__region', 'layout__region--bottom') }}>
+                    {{ content.bottom_right }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

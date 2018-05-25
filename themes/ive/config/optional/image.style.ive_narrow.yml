@@ -1,0 +1,15 @@
+uuid: c8a68f97-5151-4f1e-b20f-7aafe25666a2
+langcode: en
+status: true
+dependencies: {  }
+name: ive_narrow
+label: 'Ive narrow'
+effects:
+  1da6a83b-8032-4b2c-99a7-c4412d8c018f:
+    uuid: 1da6a83b-8032-4b2c-99a7-c4412d8c018f
+    id: image_scale
+    weight: 1
+    data:
+      width: 280
+      height: null
+      upscale: false
