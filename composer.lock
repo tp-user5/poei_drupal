@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7259d5fb24857ccd6de2ad1138e7a68",
+    "content-hash": "a5c1ca784e40348451495e64d8427a81",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3114,6 +3114,55 @@
             "time": "2018-04-18T12:32:50+00:00"
         },
         {
+            "name": "sameer-shelavale/php-countries-array",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sameer-shelavale/php-countries-array.git",
+                "reference": "d5faa8e646df21ed4419c1fb793d9c39536c966b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sameer-shelavale/php-countries-array/zipball/d5faa8e646df21ed4419c1fb793d9c39536c966b",
+                "reference": "d5faa8e646df21ed4419c1fb793d9c39536c966b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SameerShelavale\\PhpCountriesArray\\": "src/"
+                },
+                "psr-4": {
+                    "SameerShelavale\\PhpCountriesArray\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sameer Shelavale",
+                    "email": "samiirds@gmail.com"
+                }
+            ],
+            "description": "PHP class to get array of countries names with ISO_3166-1 alpha-2, alpha-3, numeric codes, ISD codes and continent",
+            "keywords": [
+                "ISD Codes",
+                "ISO_3166-1",
+                "List of countries",
+                "PHP countries array",
+                "alpha-2",
+                "alpha-3",
+                "continent",
+                "countries array"
+            ],
+            "time": "2016-04-12T11:23:30+00:00"
+        },
+        {
             "name": "sebastian/version",
             "version": "2.0.1",
             "source": {
@@ -4602,6 +4651,61 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2018-04-08T08:21:29+00:00"
+        },
+        {
+            "name": "th3mouk/yahoo-weather-api",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Th3Mouk/YahooWeatherAPI.git",
+                "reference": "e66cc22f41d289cf2ef5615ae47369d68a138a3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Th3Mouk/YahooWeatherAPI/zipball/e66cc22f41d289cf2ef5615ae47369d68a138a3f",
+                "reference": "e66cc22f41d289cf2ef5615ae47369d68a138a3f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2.1",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.4.3",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Th3Mouk\\YahooWeatherAPI\\": "src/",
+                    "Th3Mouk\\YahooWeatherAPI\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy Marodon",
+                    "email": "marodon.jeremy@gmail.com"
+                }
+            ],
+            "description": "A PHP weather forecast library based on Yahoo Weather API.",
+            "homepage": "https://github.com/Th3Mouk/YahooWeatherAPI",
+            "keywords": [
+                "api",
+                "forecasts",
+                "weather",
+                "yahoo",
+                "yahoo api"
+            ],
+            "time": "2016-09-27T19:45:21+00:00"
         },
         {
             "name": "twig/twig",

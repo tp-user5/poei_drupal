@@ -2,10 +2,31 @@
 
 // Add your custom theme override functions here.
 
+use SameerShelavale\PhpCountriesArray\CountriesArray;
+use Th3Mouk\YahooWeatherAPI\YahooWeatherAPI;
+
 /**
  * Implements hook_preprocess_block()
  */
 function lemonde_preprocess_block(&$variables) {
+    //kint($variables);
+    if (!empty($variables['content']['#block_content'])) {
+        $block_id = $variables['content']['#block_content']->id();
+        //kint($block_id);
+
+        switch ($block_id) {
+          case 5 :
+            $variables['countries'] = CountriesArray::get();
+            break;
+          case 6 :
+            $yahooWeather = new YahooWeatherAPI();
+            $data = $yahooWeather->callApiCityName('Paris', 'c');
+            $variables['weather'] = [];
+            $variables['weather']['text'] = $data['item']['condition']['text'];
+            $variables['weather']['temp'] = $data['item']['condition']['temp'];
+            break;
+        }
+    }
 }
 
 /**

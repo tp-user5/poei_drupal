@@ -15,7 +15,9 @@
         "drupal/core": "^8.5",
         "drupal/scheduler": "^1.0",
         "drupal/block_scheduler": "^1.0",
-        "drupal/zurb_foundation": "^6.0"
+        "drupal/zurb_foundation": "^6.0",
+        "sameer-shelavale/php-countries-array": "^1.0",
+        "th3mouk/yahoo-weather-api": "^1.0"
     },
     "replace": {
     },
